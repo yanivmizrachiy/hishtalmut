@@ -1,0 +1,5 @@
+{
+  "trainingId": "missing-official-number",
+  "meetingsFile": "../../data/meetings.json",
+  "note": "מקור המפגשים המרכזי הוא data/meetings.json"
+}
