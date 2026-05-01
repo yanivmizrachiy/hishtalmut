@@ -31,12 +31,12 @@ function formatDateForSort(value) {
 function routeLabel(trainingId) {
   const training = state.trainings.find(item => item.id === trainingId);
   if (!training) return trainingId;
-  return `${training.defaultStartTime}-${training.defaultEndTime}`;
+  return training.displayName || training.title || `${training.defaultStartTime}-${training.defaultEndTime}`;
 }
 
 function trainingTitle(trainingId) {
   const training = state.trainings.find(item => item.id === trainingId);
-  return training ? training.title : trainingId;
+  return training ? (training.displayName || training.title) : trainingId;
 }
 
 function trainingMatches(training) {
@@ -45,6 +45,7 @@ function trainingMatches(training) {
 
   const blob = normalize([
     training.id,
+    training.displayName,
     training.officialNumber,
     training.officialNumberStatus,
     training.title,
@@ -69,6 +70,7 @@ function meetingMatches(meeting) {
   const blob = normalize([
     meeting.trainingId,
     trainingTitle(meeting.trainingId),
+    routeLabel(meeting.trainingId),
     meeting.meetingNumber,
     meeting.displayDate,
     meeting.date,
@@ -89,6 +91,7 @@ function missingMatches(item) {
   const blob = normalize([
     item.trainingId,
     trainingTitle(item.trainingId),
+    routeLabel(item.trainingId),
     item.field,
     item.status,
     item.note
@@ -123,7 +126,7 @@ function renderTrainingsTable() {
 
   $("#trainingsTable").innerHTML = rows.length ? rows.map(training => `
     <tr>
-      <td>${escapeHtml(training.title)}</td>
+      <td>${escapeHtml(training.displayName || training.title)}</td>
       <td>${escapeHtml(training.officialNumber || "חסר")}</td>
       <td>${escapeHtml(training.year)}</td>
       <td>${escapeHtml(training.field)}</td>
