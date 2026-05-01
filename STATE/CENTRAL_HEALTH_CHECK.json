@@ -1,0 +1,237 @@
+{
+  "checkedAt": "2026-05-01T12:04:35+03:00",
+  "repo": "yanivmizrachiy/hishtalmut",
+  "branch": "main",
+  "commit": "903c373",
+  "site": "https://yanivmizrachiy.github.io/hishtalmut/",
+  "durationMs": 1612,
+  "totalChecks": 37,
+  "passed": 37,
+  "failed": 0,
+  "warnings": 0,
+  "status": "OK",
+  "checks": [
+    {
+      "name": "קובץ קיים: index.html",
+      "pass": true,
+      "severity": "error",
+      "details": "בדיקת קיום קובץ index.html"
+    },
+    {
+      "name": "קובץ קיים: assets\\css\\style.css",
+      "pass": true,
+      "severity": "error",
+      "details": "בדיקת קיום קובץ assets\\css\\style.css"
+    },
+    {
+      "name": "קובץ קיים: assets\\js\\app.js",
+      "pass": true,
+      "severity": "error",
+      "details": "בדיקת קיום קובץ assets\\js\\app.js"
+    },
+    {
+      "name": "קובץ קיים: data\\trainings.json",
+      "pass": true,
+      "severity": "error",
+      "details": "בדיקת קיום קובץ data\\trainings.json"
+    },
+    {
+      "name": "קובץ קיים: data\\meetings.json",
+      "pass": true,
+      "severity": "error",
+      "details": "בדיקת קיום קובץ data\\meetings.json"
+    },
+    {
+      "name": "קובץ קיים: data\\missing-data.json",
+      "pass": true,
+      "severity": "error",
+      "details": "בדיקת קיום קובץ data\\missing-data.json"
+    },
+    {
+      "name": "קובץ קיים: data\\search-index.json",
+      "pass": true,
+      "severity": "error",
+      "details": "בדיקת קיום קובץ data\\search-index.json"
+    },
+    {
+      "name": "קובץ קיים: RULES.md",
+      "pass": true,
+      "severity": "error",
+      "details": "בדיקת קיום קובץ RULES.md"
+    },
+    {
+      "name": "יש בדיוק 2 השתלמויות",
+      "pass": true,
+      "severity": "error",
+      "details": "נמצאו 2 השתלמויות"
+    },
+    {
+      "name": "קיימת השתלמות ב",
+      "pass": true,
+      "severity": "error",
+      "details": "השתלמות שמתחילה קודם צריכה להיקרא השתלמות ב"
+    },
+    {
+      "name": "קיימת השתלמות ג",
+      "pass": true,
+      "severity": "error",
+      "details": "ההשתלמות השנייה צריכה להיקרא השתלמות ג"
+    },
+    {
+      "name": "השתלמות ב מתחילה קודם",
+      "pass": true,
+      "severity": "error",
+      "details": "תאריך התחלה בפועל: 2026-04-27"
+    },
+    {
+      "name": "השתלמות ב שעות נכונות",
+      "pass": true,
+      "severity": "error",
+      "details": "שעות בפועל: 16:00-18:30"
+    },
+    {
+      "name": "השתלמות ב 10 מפגשים",
+      "pass": true,
+      "severity": "error",
+      "details": "מספר מפגשים בפועל: 10"
+    },
+    {
+      "name": "השתלמות ב 30 שעות אקדמיות",
+      "pass": true,
+      "severity": "error",
+      "details": "שעות אקדמיות בפועל: 30"
+    },
+    {
+      "name": "השתלמות ב ללא מספר מומצא",
+      "pass": true,
+      "severity": "error",
+      "details": "מספר השתלמות רשמי צריך להיות חסר עד שתמסור אותו"
+    },
+    {
+      "name": "השתלמות ג מתחילה אחרי ב",
+      "pass": true,
+      "severity": "error",
+      "details": "תאריך התחלה בפועל: 2026-05-03"
+    },
+    {
+      "name": "השתלמות ג שעות נכונות",
+      "pass": true,
+      "severity": "error",
+      "details": "שעות בפועל: 19:00-21:30"
+    },
+    {
+      "name": "השתלמות ג 9 מפגשים",
+      "pass": true,
+      "severity": "error",
+      "details": "מספר מפגשים בפועל: 9"
+    },
+    {
+      "name": "השתלמות ג 27 שעות אקדמיות",
+      "pass": true,
+      "severity": "error",
+      "details": "שעות אקדמיות בפועל: 27"
+    },
+    {
+      "name": "השתלמות ג ללא מספר מומצא",
+      "pass": true,
+      "severity": "error",
+      "details": "מספר השתלמות רשמי צריך להיות חסר עד שתמסור אותו"
+    },
+    {
+      "name": "להשתלמות ב יש 10 מפגשים בפועל",
+      "pass": true,
+      "severity": "error",
+      "details": "נמצאו 10 מפגשים"
+    },
+    {
+      "name": "להשתלמות ג יש 9 מפגשים בפועל",
+      "pass": true,
+      "severity": "error",
+      "details": "נמצאו 9 מפגשים"
+    },
+    {
+      "name": "סה״כ 19 מפגשים",
+      "pass": true,
+      "severity": "error",
+      "details": "נמצאו 19 מפגשים"
+    },
+    {
+      "name": "כל מפגש כולל שדות חובה",
+      "pass": true,
+      "severity": "error",
+      "details": "מפגשים חסרים שדות חובה: 0"
+    },
+    {
+      "name": "אין שדות לא מאומתים במפגשים",
+      "pass": true,
+      "severity": "error",
+      "details": "שדות אסורים שנמצאו: "
+    },
+    {
+      "name": "אין טקסט דמו או טקסט מערכת מיותר",
+      "pass": true,
+      "severity": "error",
+      "details": "טקסטים אסורים שנמצאו: "
+    },
+    {
+      "name": "HTML מופרד מ-CSS",
+      "pass": true,
+      "severity": "error",
+      "details": "index.html צריך לטעון assets/css/style.css"
+    },
+    {
+      "name": "HTML מופרד מ-JS",
+      "pass": true,
+      "severity": "error",
+      "details": "index.html צריך לטעון assets/js/app.js"
+    },
+    {
+      "name": "אין style inline",
+      "pass": true,
+      "severity": "error",
+      "details": "לא צריך CSS בתוך HTML"
+    },
+    {
+      "name": "אין script inline",
+      "pass": true,
+      "severity": "error",
+      "details": "לא צריך JavaScript בתוך HTML"
+    },
+    {
+      "name": "JS מציג displayName",
+      "pass": true,
+      "severity": "error",
+      "details": "האתר צריך להציג השתלמות ב / השתלמות ג"
+    },
+    {
+      "name": "CSS קיים ואינו ריק",
+      "pass": true,
+      "severity": "error",
+      "details": "גודל CSS: 4006 תווים"
+    },
+    {
+      "name": "הקישור החיצוני חי",
+      "pass": true,
+      "severity": "error",
+      "details": "זמן בדיקה: 444 ms"
+    },
+    {
+      "name": "הקישור החיצוני מהיר מספיק",
+      "pass": true,
+      "severity": "warning",
+      "details": "זמן טעינה בסיסי: 444 ms"
+    },
+    {
+      "name": "GitHub raw data מעודכן בשמות ב/ג",
+      "pass": true,
+      "severity": "error",
+      "details": "זמן בדיקה: 341 ms"
+    },
+    {
+      "name": "validate-data.mjs תקין",
+      "pass": true,
+      "severity": "error",
+      "details": "VALIDATION_OK"
+    }
+  ]
+}
