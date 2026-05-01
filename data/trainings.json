@@ -1,9 +1,10 @@
 [
   {
     "id": "math-2026-track-1600-10-meetings",
+    "displayName": "השתלמות ב",
     "officialNumber": null,
     "officialNumberStatus": "חסר בתמונה שסופקה",
-    "title": "השתלמות מתמטיקה - מסלול 16:00-18:30",
+    "title": "השתלמות ב",
     "year": 2026,
     "field": "מתמטיקה",
     "totalMeetings": 10,
@@ -23,9 +24,10 @@
   },
   {
     "id": "math-2026-track-1900-9-meetings",
+    "displayName": "השתלמות ג",
     "officialNumber": null,
     "officialNumberStatus": "חסר בתמונה שסופקה",
-    "title": "השתלמות מתמטיקה - מסלול 19:00-21:30",
+    "title": "השתלמות ג",
     "year": 2026,
     "field": "מתמטיקה",
     "totalMeetings": 9,
