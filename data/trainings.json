@@ -2,8 +2,8 @@
   {
     "id": "math-2026-track-1600-10-meetings",
     "displayName": "השתלמות ב",
-    "officialNumber": null,
-    "officialNumberStatus": "חסר בתמונה שסופקה",
+    "officialNumber": "215195",
+    "officialNumberStatus": "קיים",
     "title": "השתלמות ב",
     "year": 2026,
     "field": "מתמטיקה",
@@ -25,8 +25,8 @@
   {
     "id": "math-2026-track-1900-9-meetings",
     "displayName": "השתלמות ג",
-    "officialNumber": null,
-    "officialNumberStatus": "חסר בתמונה שסופקה",
+    "officialNumber": "215203",
+    "officialNumberStatus": "קיים",
     "title": "השתלמות ג",
     "year": 2026,
     "field": "מתמטיקה",
@@ -37,7 +37,7 @@
     "endDate": "2026-06-29",
     "defaultStartTime": "19:00",
     "defaultEndTime": "21:30",
-    "source": "טבלה שסופקה על ידי יניב",
+    "source": "טבלה שסופקה על ידי יניב + מספר השתלמות שנמסר על ידי יניב",
     "topics": [
       "גאומטריה קדם-היסקית כיתה ז-ח",
       "יישום מרווח",
