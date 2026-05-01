@@ -4,41 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>מאגר השתלמויות</title>
-  <meta name="description" content="מאגר השתלמויות לפי הטבלאות שנמסרו">
+  <meta name="description" content="מאגר השתלמויות לפי הטבלאות שנמסרו בלבד">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="hero compact-hero">
-    <div class="hero__glass">
+  <header class="page-header">
+    <div class="header-inner">
       <h1>מאגר השתלמויות</h1>
-      <p>מידע לפי הטבלאות שנמסרו בלבד.</p>
+      <p>דף ראשי לפי הטבלאות שנמסרו בלבד</p>
+      <p class="source-note">הקישור הקבוע מתעדכן מהריפו: yanivmizrachiy/hishtalmut</p>
     </div>
   </header>
 
-  <main class="home-only">
-    <section class="search-panel">
-      <label for="globalSearch">חיפוש בטבלאות</label>
-      <input id="globalSearch" type="search" placeholder="חפש לפי תאריך, שעה, נושא, מפגש או מספר השתלמות">
+  <main class="page-main">
+    <section class="search-panel" aria-labelledby="search-title">
+      <h2 id="search-title">חיפוש בטבלאות</h2>
+      <input id="globalSearch" type="search" placeholder="חפש לפי תאריך, שעה, נושא, מפגש, מסלול או מספר השתלמות">
     </section>
 
-    <section class="stats-grid" id="statsGrid"></section>
+    <section class="summary-grid" id="statsGrid" aria-label="סיכום מספרי"></section>
 
-    <section class="table-section">
-      <h2>השתלמויות</h2>
-      <div id="trainingsList" class="cards-grid"></div>
-    </section>
-
-    <section class="table-section">
-      <h2>לוח מפגשים</h2>
+    <section class="table-section" aria-labelledby="trainings-title">
+      <h2 id="trainings-title">טבלת השתלמויות</h2>
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
               <th>מסלול</th>
-              <th>מס׳ מפגש</th>
+              <th>מספר השתלמות</th>
+              <th>שנה</th>
+              <th>תחום</th>
+              <th>מס׳ מפגשים</th>
+              <th>שעות אקדמיות</th>
+              <th>תאריך התחלה</th>
+              <th>תאריך סיום</th>
+              <th>שעות</th>
+            </tr>
+          </thead>
+          <tbody id="trainingsTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="table-section" aria-labelledby="meetings-title">
+      <h2 id="meetings-title">טבלת מפגשים מסודרת לפי תאריך</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
               <th>תאריך</th>
               <th>יום</th>
               <th>שעות</th>
+              <th>מסלול</th>
+              <th>מס׳ מפגש</th>
               <th>שעות אקדמיות</th>
               <th>נושא</th>
             </tr>
@@ -48,9 +66,21 @@
       </div>
     </section>
 
-    <section class="table-section">
-      <h2>נתונים חסרים מתוך הטבלאות</h2>
-      <div id="missingList" class="cards-grid"></div>
+    <section class="table-section" aria-labelledby="missing-title">
+      <h2 id="missing-title">נתונים חסרים בטבלאות</h2>
+      <div class="table-wrap compact-table">
+        <table>
+          <thead>
+            <tr>
+              <th>מסלול</th>
+              <th>שדה חסר</th>
+              <th>סטטוס</th>
+              <th>הערה</th>
+            </tr>
+          </thead>
+          <tbody id="missingTable"></tbody>
+        </table>
+      </div>
     </section>
   </main>
 
