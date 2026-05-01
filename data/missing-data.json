@@ -1,14 +1,14 @@
 [
   {
-    "trainingId": "missing-official-number",
+    "trainingId": "math-2026-track-1600-10-meetings",
     "field": "מספר השתלמות רשמי",
     "status": "חסר",
-    "note": "בתמונה שסופקה לא הופיע מספר השתלמות כללי. מופיעים רק מספרי מפגש 1-10."
+    "note": "בטבלה שסופקה לא מופיע מספר השתלמות רשמי."
   },
   {
-    "trainingId": "missing-official-number",
-    "field": "קבצים ונספחים",
+    "trainingId": "math-2026-track-1900-9-meetings",
+    "field": "מספר השתלמות רשמי",
     "status": "חסר",
-    "note": "לא צורפו קבצים נוספים מעבר לתמונה."
+    "note": "בטבלה שסופקה לא מופיע מספר השתלמות רשמי."
   }
 ]

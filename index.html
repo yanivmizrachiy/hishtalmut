@@ -4,108 +4,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>מאגר השתלמויות</title>
-  <meta name="description" content="מאגר השתלמויות חכם בעברית RTL">
+  <meta name="description" content="מאגר השתלמויות לפי הטבלאות שנמסרו">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="hero">
+  <header class="hero compact-hero">
     <div class="hero__glass">
-      <div class="eyebrow">מערכת חכמה לניהול השתלמויות</div>
       <h1>מאגר השתלמויות</h1>
-      <p>ניהול מסודר של מספרי השתלמות, מפגשים, תאריכים, שעות, נושאים, קבצים ונתונים חסרים.</p>
-      <div class="hero-actions">
-        <button class="premium-btn primary" data-route="trainings">📚 כל ההשתלמויות</button>
-        <button class="premium-btn gold" data-route="meetings">📅 לוח מפגשים</button>
-        <button class="premium-btn light" data-action="copy-add-prompt">➕ העתק תבנית הוספה</button>
-      </div>
+      <p>מידע לפי הטבלאות שנמסרו בלבד.</p>
     </div>
   </header>
 
-  <main class="app-shell">
-    <aside class="side-nav" aria-label="ניווט ראשי">
-      <button class="nav-btn active" data-route="home">🏠 דף הבית</button>
-      <button class="nav-btn" data-route="trainings">📚 השתלמויות</button>
-      <button class="nav-btn" data-route="meetings">📅 מפגשים</button>
-      <button class="nav-btn" data-route="files">📁 קבצים</button>
-      <button class="nav-btn danger" data-route="missing">⚠️ חסרים</button>
-    </aside>
+  <main class="home-only">
+    <section class="search-panel">
+      <label for="globalSearch">חיפוש בטבלאות</label>
+      <input id="globalSearch" type="search" placeholder="חפש לפי תאריך, שעה, נושא, מפגש או מספר השתלמות">
+    </section>
 
-    <section class="content">
-      <div class="search-panel">
-        <label for="globalSearch">חיפוש חכם</label>
-        <input id="globalSearch" type="search" placeholder="חפש לפי נושא, תאריך, מפגש, מספר השתלמות, פונקציה, גאומטריה...">
-        <button class="premium-btn small" data-action="clear-search">נקה חיפוש</button>
+    <section class="stats-grid" id="statsGrid"></section>
+
+    <section class="table-section">
+      <h2>השתלמויות</h2>
+      <div id="trainingsList" class="cards-grid"></div>
+    </section>
+
+    <section class="table-section">
+      <h2>לוח מפגשים</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>מסלול</th>
+              <th>מס׳ מפגש</th>
+              <th>תאריך</th>
+              <th>יום</th>
+              <th>שעות</th>
+              <th>שעות אקדמיות</th>
+              <th>נושא</th>
+            </tr>
+          </thead>
+          <tbody id="meetingsTable"></tbody>
+        </table>
       </div>
+    </section>
 
-      <section id="view-home" class="view active">
-        <div class="stats-grid" id="statsGrid"></div>
-        <div class="premium-card">
-          <h2>מה המערכת יודעת לעשות?</h2>
-          <div class="feature-grid">
-            <div>🔎 חיפוש לפי נושא, תאריך ומפגש</div>
-            <div>📅 טבלת מפגשים מלאה</div>
-            <div>📋 העתקת סיכום בלחיצה</div>
-            <div>⬇️ ייצוא CSV אמיתי</div>
-            <div>⚠️ סימון נתונים חסרים</div>
-            <div>📱 מותאם לטלפון ולמחשב</div>
-          </div>
-        </div>
-      </section>
-
-      <section id="view-trainings" class="view">
-        <div class="section-title">
-          <h2>כל ההשתלמויות</h2>
-          <button class="premium-btn small" data-action="export-trainings">⬇️ ייצוא השתלמויות</button>
-        </div>
-        <div id="trainingsList" class="cards-grid"></div>
-      </section>
-
-      <section id="view-meetings" class="view">
-        <div class="section-title">
-          <h2>לוח מפגשים</h2>
-          <button class="premium-btn small" data-action="export-meetings">⬇️ ייצוא מפגשים</button>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>מפגש</th>
-                <th>תאריך</th>
-                <th>יום</th>
-                <th>שעה</th>
-                <th>שעות</th>
-                <th>נושא</th>
-              </tr>
-            </thead>
-            <tbody id="meetingsTable"></tbody>
-          </table>
-        </div>
-      </section>
-
-      <section id="view-files" class="view">
-        <div class="section-title">
-          <h2>קבצים ונספחים</h2>
-        </div>
-        <div id="filesList" class="cards-grid"></div>
-      </section>
-
-      <section id="view-missing" class="view">
-        <div class="section-title">
-          <h2>נתונים חסרים</h2>
-        </div>
-        <div id="missingList" class="cards-grid"></div>
-      </section>
+    <section class="table-section">
+      <h2>נתונים חסרים מתוך הטבלאות</h2>
+      <div id="missingList" class="cards-grid"></div>
     </section>
   </main>
-
-  <nav class="bottom-nav" aria-label="ניווט תחתון">
-    <button data-route="home">🏠<span>בית</span></button>
-    <button data-route="trainings">📚<span>השתלמויות</span></button>
-    <button data-route="meetings">📅<span>מפגשים</span></button>
-    <button data-route="missing">⚠️<span>חסרים</span></button>
-  </nav>
-
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
 
   <script src="assets/js/app.js"></script>
 </body>
