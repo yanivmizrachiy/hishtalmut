@@ -3,6 +3,12 @@
 ## כלל עליון
 דף הבית מציג רק מידע לפי הטבלאות שנמסרו על ידי יניב.
 
+## מבנה חובה
+- HTML ב-index.html
+- CSS ב-assets/css/style.css
+- JavaScript ב-assets/js/app.js
+- נתונים ב-data/*.json
+
 ## אסור להציג
 - מידע דמו
 - טקסט שיווקי
@@ -23,10 +29,8 @@
 - נושא
 - סיכומי ספירה וחיבור שנובעים ישירות מהטבלאות
 
-## מקור אמת
-- data/trainings.json
-- data/meetings.json
-- data/missing-data.json
+## קישור חיצוני קבוע
+https://yanivmizrachiy.github.io/hishtalmut/
 
 ## עדכון אחרון
-2026-05-01T10:20:59+03:00
+2026-05-01T10:41:37+03:00
