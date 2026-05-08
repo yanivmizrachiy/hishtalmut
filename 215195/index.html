@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f97316">
+  <meta name="description" content="השתלמות מספר 215195 - עדכון תוכנית הלימודים. לוח מפגשים, סטטוס מפגשים וספריית PDF מוטמעת לצפייה, הורדה והדפסה.">
+  <title>השתלמות מספר 215195 — עדכון תוכנית הלימודים</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#content">דלג לתוכן</a>
+  <div class="page-shell">
+    <header class="hero" id="top">
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="hero__content">
+        <p class="eyebrow">השתלמות ב׳ / השתלמות 2</p>
+        <h1>השתלמות מספר 215195</h1>
+        <p class="subtitle">עדכון תוכנית הלימודים</p>
+        <div class="hero__badges" aria-label="נתוני השתלמות">
+          <span>10 מפגשים</span>
+          <span>16:00–18:30</span>
+          <span>מאומת ביומן</span>
+          <span>צבע יומן כתום</span>
+        </div>
+      </div>
+    </header>
+
+    <nav class="quick-nav" aria-label="ניווט מהיר">
+      <a href="#schedule">לוח מפגשים</a>
+      <a href="#materials">ספריית חומרים</a>
+      <a href="#booklet">חוברת צפייה</a>
+      <a href="#status">מצב האתר</a>
+    </nav>
+
+    <main id="content">
+      <section class="summary-grid" aria-label="סיכום">
+        <article class="summary-card summary-card--done">
+          <strong id="doneCount">0</strong>
+          <span>מפגשים התקיימו</span>
+        </article>
+        <article class="summary-card summary-card--future">
+          <strong id="futureCount">0</strong>
+          <span>מפגשים טרם התקיימו</span>
+        </article>
+        <article class="summary-card">
+          <strong>5</strong>
+          <span>קבצי PDF מוטמעים</span>
+        </article>
+        <article class="summary-card">
+          <strong>215195</strong>
+          <span>מספר השתלמות</span>
+        </article>
+      </section>
+
+      <section class="panel" id="schedule">
+        <div class="section-heading">
+          <p class="section-label">לוח מפגשים</p>
+          <h2>תוכנית ההשתלמות לפי היומן</h2>
+          <p>מפגשים שכבר עברו מסומנים ב־<strong class="green-text">✓ התקיים</strong>. מפגשים עתידיים מסומנים ב־<strong class="red-text">טרם התקיים</strong>.</p>
+        </div>
+        <div class="meeting-tools" role="group" aria-label="סינון מפגשים">
+          <button class="filter-btn is-active" type="button" data-meeting-filter="all">כל המפגשים</button>
+          <button class="filter-btn" type="button" data-meeting-filter="done">התקיימו</button>
+          <button class="filter-btn" type="button" data-meeting-filter="future">טרם התקיימו</button>
+        </div>
+        <div class="meetings-list" id="meetingsList"></div>
+      </section>
+
+      <section class="panel panel--materials" id="materials">
+        <div class="section-heading">
+          <p class="section-label">PDF מוטמע באתר</p>
+          <h2>ספריית חומרי ההשתלמות</h2>
+          <p>כל קובץ נשמר בנפרד בשם המדויק שלו. אפשר לצפות באתר, לפתוח במסך מלא, להוריד או להגיע להדפסה מהירה.</p>
+        </div>
+
+        <div class="materials-toolbar" role="group" aria-label="סינון חומרי לימוד">
+          <button class="filter-btn is-active" type="button" data-material-filter="all">כל החומרים</button>
+          <button class="filter-btn" type="button" data-material-filter="unassigned">טרם שויך למפגש</button>
+          <button class="filter-btn" type="button" data-material-filter="print">להדפסה מהירה</button>
+        </div>
+
+        <div class="materials-grid" id="materialsGrid"></div>
+      </section>
+
+      <section class="panel" id="booklet">
+        <div class="section-heading">
+          <p class="section-label">חוויית צפייה רציפה</p>
+          <h2>חוברת צפייה בלי לאחד קבצים</h2>
+          <p>הקבצים המקוריים נשארים נפרדים, אבל כאן אפשר לדפדף ביניהם כמו ספרייה מסודרת.</p>
+        </div>
+        <div class="booklet-layout">
+          <aside class="booklet-list" id="bookletList" aria-label="רשימת קבצים בחוברת"></aside>
+          <div class="booklet-viewer">
+            <div class="viewer-topline">
+              <div>
+                <p class="mini-label">קובץ נבחר</p>
+                <h3 id="activePdfTitle">בחר קובץ לצפייה</h3>
+              </div>
+              <div class="viewer-actions" id="activePdfActions"></div>
+            </div>
+            <iframe id="activePdfFrame" title="תצוגת PDF נבחר" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel status-panel" id="status">
+        <div class="section-heading">
+          <p class="section-label">מצב אמת</p>
+          <h2>מה כבר נמצא באתר</h2>
+        </div>
+        <ul class="truth-list">
+          <li><span>✓</span> האתר בעברית מלאה ו־RTL.</li>
+          <li><span>✓</span> כל כפתורי הפעולה גלויים בעברית.</li>
+          <li><span>✓</span> קבצי ה־PDF מוטמעים באתר כקבצים נפרדים.</li>
+          <li><span>✓</span> הכפתור <strong>להדפסה</strong> פותח הדפסה/קובץ הדפסה במהירות שהדפדפן מאפשר.</li>
+          <li><span>✓</span> הנושאים של המפגשים עדיין לא הוזנו ולכן מוצג טקסט אמת: <strong>נושא יתווסף</strong>.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/pdf-data.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
