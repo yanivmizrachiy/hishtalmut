@@ -7,6 +7,30 @@ const state = {
 
 const $ = (selector) => document.querySelector(selector);
 
+const TIME_ZONE = "Asia/Jerusalem";
+
+const liveDateFormatter = new Intl.DateTimeFormat("he-IL-u-ca-gregory", {
+  timeZone: TIME_ZONE,
+  weekday: "long",
+  year: "numeric",
+  month: "long",
+  day: "numeric"
+});
+
+const liveTimeFormatter = new Intl.DateTimeFormat("he-IL-u-ca-gregory", {
+  timeZone: TIME_ZONE,
+  hour: "2-digit",
+  minute: "2-digit",
+  second: "2-digit"
+});
+
+const tableDateFormatter = new Intl.DateTimeFormat("he-IL-u-ca-gregory", {
+  timeZone: TIME_ZONE,
+  year: "numeric",
+  month: "2-digit",
+  day: "2-digit"
+});
+
 function escapeHtml(value) {
   return String(value ?? "")
     .replaceAll("&", "&amp;")
@@ -24,8 +48,40 @@ function normalize(value) {
     .trim();
 }
 
+function dateFromIso(value) {
+  const match = String(value || "").match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  if (!match) return null;
+  const [, year, month, day] = match;
+  return new Date(Date.UTC(Number(year), Number(month) - 1, Number(day), 12, 0, 0));
+}
+
+function formatDateForDisplay(value, fallback = "") {
+  const date = dateFromIso(value);
+  if (!date) return fallback || String(value || "");
+  return tableDateFormatter.format(date);
+}
+
+function formatMeetingDate(meeting) {
+  const date = formatDateForDisplay(meeting.date, meeting.displayDate);
+  return date || meeting.displayDate || "";
+}
+
 function formatDateForSort(value) {
   return String(value || "");
+}
+
+function updateLiveClock() {
+  const now = new Date();
+  const dateNode = $("#currentDateText");
+  const timeNode = $("#currentTimeText");
+
+  if (dateNode) {
+    dateNode.textContent = liveDateFormatter.format(now);
+  }
+
+  if (timeNode) {
+    timeNode.textContent = `שעה ${liveTimeFormatter.format(now)}`;
+  }
 }
 
 function routeLabel(trainingId) {
@@ -55,6 +111,8 @@ function trainingMatches(training) {
     training.totalAcademicHours,
     training.startDate,
     training.endDate,
+    formatDateForDisplay(training.startDate),
+    formatDateForDisplay(training.endDate),
     training.defaultStartTime,
     training.defaultEndTime,
     ...(training.topics || [])
@@ -74,6 +132,7 @@ function meetingMatches(meeting) {
     meeting.meetingNumber,
     meeting.displayDate,
     meeting.date,
+    formatMeetingDate(meeting),
     meeting.day,
     meeting.startTime,
     meeting.endTime,
@@ -126,14 +185,14 @@ function renderTrainingsTable() {
 
   $("#trainingsTable").innerHTML = rows.length ? rows.map(training => `
     <tr>
-      <td>${escapeHtml(training.displayName || training.title)}</td>
+      <td><strong>${escapeHtml(training.displayName || training.title)}</strong></td>
       <td>${escapeHtml(training.officialNumber || "חסר")}</td>
       <td>${escapeHtml(training.year)}</td>
       <td>${escapeHtml(training.field)}</td>
       <td>${escapeHtml(training.totalMeetings)}</td>
       <td>${escapeHtml(training.totalAcademicHours)}</td>
-      <td>${escapeHtml(training.startDate)}</td>
-      <td>${escapeHtml(training.endDate)}</td>
+      <td>${escapeHtml(formatDateForDisplay(training.startDate))}</td>
+      <td>${escapeHtml(formatDateForDisplay(training.endDate))}</td>
       <td>${escapeHtml(training.defaultStartTime)}-${escapeHtml(training.defaultEndTime)}</td>
     </tr>
   `).join("") : `<tr><td colspan="9">לא נמצא מידע מתאים בטבלאות.</td></tr>`;
@@ -153,9 +212,9 @@ function renderMeetingsTable() {
 
   $("#meetingsTable").innerHTML = rows.length ? rows.map(meeting => `
     <tr>
-      <td>${escapeHtml(routeLabel(meeting.trainingId))}</td>
+      <td><strong>${escapeHtml(routeLabel(meeting.trainingId))}</strong></td>
       <td>${escapeHtml(meeting.meetingNumber)}</td>
-      <td>${escapeHtml(meeting.displayDate)}</td>
+      <td>${escapeHtml(formatMeetingDate(meeting))}</td>
       <td>${escapeHtml(meeting.day)}</td>
       <td>${escapeHtml(meeting.startTime)}-${escapeHtml(meeting.endTime)}</td>
       <td>${escapeHtml(meeting.academicHours)}</td>
@@ -201,6 +260,9 @@ $("#globalSearch").addEventListener("input", event => {
   state.query = event.target.value;
   render();
 });
+
+updateLiveClock();
+setInterval(updateLiveClock, 1000);
 
 loadData().catch(error => {
   console.error(error);
