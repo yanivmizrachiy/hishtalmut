@@ -8,10 +8,25 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <main class="main-page">
+  <main class="main-page" id="top">
     <header class="page-header">
-      <h1>מאגר השתלמויות</h1>
-      <p>מידע לפי הטבלאות שנמסרו בלבד</p>
+      <div class="live-clock">
+        <span class="live-clock-label">היום באתר</span>
+        <strong id="currentDateText">טוען תאריך</strong>
+        <span id="currentTimeText">טוען שעה</span>
+      </div>
+
+      <div class="hero-copy">
+        <h1>מאגר השתלמויות</h1>
+        <p>מידע לפי הטבלאות שנמסרו בלבד</p>
+      </div>
+
+      <nav class="quick-nav">
+        <a href="#trainings-section">השתלמויות</a>
+        <a href="#meetings-section">מפגשים</a>
+        <a href="#missing-section">נתונים חסרים</a>
+        <a href="#globalSearch">חיפוש</a>
+      </nav>
     </header>
 
     <section class="search-box">
@@ -21,8 +36,11 @@
 
     <section class="summary-grid" id="statsGrid"></section>
 
-    <section class="data-section">
-      <h2>טבלת השתלמויות</h2>
+    <section class="data-section" id="trainings-section">
+      <div class="section-heading-row">
+        <h2>טבלת השתלמויות</h2>
+        <a class="back-to-top" href="#top">לראש הדף</a>
+      </div>
       <div class="table-wrap">
         <table>
           <thead>
@@ -43,13 +61,16 @@
       </div>
     </section>
 
-    <section class="data-section">
-      <h2>טבלת מפגשים מסודרת לפי תאריך</h2>
+    <section class="data-section" id="meetings-section">
+      <div class="section-heading-row">
+        <h2>טבלת מפגשים מסודרת לפי תאריך</h2>
+        <a class="back-to-top" href="#top">לראש הדף</a>
+      </div>
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
-              <th>מסלול</th>
+              <th>שם השתלמות</th>
               <th>מס׳ מפגש</th>
               <th>תאריך</th>
               <th>יום</th>
@@ -63,13 +84,16 @@
       </div>
     </section>
 
-    <section class="data-section">
-      <h2>נתונים חסרים לפי הטבלאות</h2>
+    <section class="data-section" id="missing-section">
+      <div class="section-heading-row">
+        <h2>נתונים חסרים לפי הטבלאות</h2>
+        <a class="back-to-top" href="#top">לראש הדף</a>
+      </div>
       <div class="table-wrap">
         <table>
           <thead>
             <tr>
-              <th>מסלול</th>
+              <th>שם השתלמות</th>
               <th>שדה חסר</th>
               <th>סטטוס</th>
               <th>הערה</th>
