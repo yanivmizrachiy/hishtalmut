@@ -207,5 +207,44 @@
     "endTime": "21:30",
     "academicHours": 3,
     "topic": "איך להיערך לתחילת כיתה ז וכיתה ח - סיום ההשתלמות"
+  },
+  {
+    "trainingId": "pisga-modiin-204126",
+    "meetingNumber": 1,
+    "displayDate": "8 בדצמבר",
+    "date": "",
+    "day": "לא נמסר",
+    "startTime": "לא נמסר",
+    "endTime": "לא נמסר",
+    "lessons": 3,
+    "academicHours": "לא נמסר",
+    "topic": "לא נמסר",
+    "source": "יניב מסר בצ'אט שהוא לימד בתאריך זה 3 שיעורים"
+  },
+  {
+    "trainingId": "pisga-modiin-204126",
+    "meetingNumber": 2,
+    "displayDate": "5 בינואר",
+    "date": "",
+    "day": "לא נמסר",
+    "startTime": "לא נמסר",
+    "endTime": "לא נמסר",
+    "lessons": 3,
+    "academicHours": "לא נמסר",
+    "topic": "לא נמסר",
+    "source": "יניב מסר בצ'אט שהוא לימד בתאריך זה 3 שיעורים"
+  },
+  {
+    "trainingId": "pisga-modiin-204126",
+    "meetingNumber": 3,
+    "displayDate": "12 בינואר",
+    "date": "",
+    "day": "לא נמסר",
+    "startTime": "לא נמסר",
+    "endTime": "לא נמסר",
+    "lessons": 3,
+    "academicHours": "לא נמסר",
+    "topic": "לא נמסר",
+    "source": "יניב מסר בצ'אט שהוא לימד בתאריך זה 3 שיעורים"
   }
 ]
