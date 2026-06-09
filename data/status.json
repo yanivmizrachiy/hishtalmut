@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "trainingId": "pisga-modiin-204126",
+    "meetingNumber": 1,
+    "date": "8 בדצמבר",
+    "kind": "הוראה",
+    "status": "מלמד",
+    "source": "יניב מסר בצ'אט",
+    "note": "3 שיעורים; שנה ושעות שעון לא נמסרו"
+  },
+  {
+    "trainingId": "pisga-modiin-204126",
+    "meetingNumber": 2,
+    "date": "5 בינואר",
+    "kind": "הוראה",
+    "status": "מלמד",
+    "source": "יניב מסר בצ'אט",
+    "note": "3 שיעורים; שנה ושעות שעון לא נמסרו"
+  },
+  {
+    "trainingId": "pisga-modiin-204126",
+    "meetingNumber": 3,
+    "date": "12 בינואר",
+    "kind": "הוראה",
+    "status": "מלמד",
+    "source": "יניב מסר בצ'אט",
+    "note": "3 שיעורים; שנה ושעות שעון לא נמסרו"
+  }
+]
