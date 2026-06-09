@@ -115,5 +115,57 @@
     "status": "מלמד",
     "source": "יניב מסר בצ'אט",
     "note": "3 שיעורים; 12 בינואר לא כלול; שנה ושעות שעון לא נמסרו"
+  },
+  {
+    "trainingId": "math-2026-track-1900-9-meetings",
+    "officialNumber": "215203",
+    "meetingNumber": 3,
+    "date": "2026-05-18",
+    "displayDate": "18 מאי",
+    "kind": "הוראה",
+    "status": "מלמד",
+    "time": "19:00-21:30",
+    "lessons": 3,
+    "source": "יניב מסר בצ'אט",
+    "note": "בוצע לפני 10.6.2026"
+  },
+  {
+    "trainingId": "math-2026-track-1900-9-meetings",
+    "officialNumber": "215203",
+    "meetingNumber": 4,
+    "date": "2026-05-25",
+    "displayDate": "25 מאי",
+    "kind": "הוראה",
+    "status": "מלמד",
+    "time": "19:00-21:30",
+    "lessons": 3,
+    "source": "יניב מסר בצ'אט",
+    "note": "בוצע לפני 10.6.2026"
+  },
+  {
+    "trainingId": "math-2026-track-1900-9-meetings",
+    "officialNumber": "215203",
+    "meetingNumber": 7,
+    "date": "2026-06-08",
+    "displayDate": "8 יוני",
+    "kind": "הוראה",
+    "status": "מלמד",
+    "time": "19:00-21:30",
+    "lessons": 3,
+    "source": "יניב מסר בצ'אט",
+    "note": "בוצע לפני 10.6.2026"
+  },
+  {
+    "trainingId": "math-2026-track-1900-9-meetings",
+    "officialNumber": "215203",
+    "meetingNumber": null,
+    "date": "2026-06-22",
+    "displayDate": "22 יוני",
+    "kind": "הוראה",
+    "status": "מלמד",
+    "time": "19:00-21:30",
+    "lessons": 3,
+    "source": "יניב מסר בצ'אט",
+    "note": "עתידי נכון ל-10.6.2026; עדיין לא התקיים"
   }
 ]
