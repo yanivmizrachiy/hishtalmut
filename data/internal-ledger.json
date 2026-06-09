@@ -1,0 +1,119 @@
+{
+  "lastUpdated": "2026-06-10",
+  "policy": "נתונים אמיתיים בלבד לפי יניב או לפי קובץ מקור. אין דמו ואין השלמות בניחוש.",
+  "trainings": [
+    {
+      "id": "math-2026-track-1600-10-meetings",
+      "name": "השתלמות ב",
+      "officialNumber": "215195",
+      "year": 2026,
+      "field": "מתמטיקה",
+      "defaultTime": "16:00-18:30",
+      "sourceFile": "data/trainings.json",
+      "notes": "קיים גם בקובץ המפגשים הראשי"
+    },
+    {
+      "id": "math-2026-track-1900-9-meetings",
+      "name": "השתלמות ג",
+      "officialNumber": "215203",
+      "year": 2026,
+      "field": "מתמטיקה",
+      "defaultTime": "19:00-21:30",
+      "sourceFile": "data/trainings.json",
+      "notes": "השם תוקן חזרה להשתלמות ג לפי יניב"
+    },
+    {
+      "id": "pisga-modiin-204126",
+      "name": "השתלמות פסגה מודיעין",
+      "officialNumber": "204126",
+      "year": "חסר",
+      "field": "חסר",
+      "defaultTime": "חסר",
+      "sourceFile": "data/trainings.json",
+      "notes": "שנה, שעות ונושא לא נמסרו"
+    },
+    {
+      "id": "tikshuv-209640",
+      "name": "השתלמות תקשוב",
+      "officialNumber": "209640",
+      "year": "חסר",
+      "field": "תקשוב",
+      "defaultTime": "חסר",
+      "sourceFile": "data/trainings.json",
+      "notes": "12 בינואר נמחק לפי יניב; שנה ושעות לא נמסרו"
+    },
+    {
+      "id": "holon-202440",
+      "name": "השתלמות חולון",
+      "officialNumber": "202440",
+      "year": 2026,
+      "field": "חסר",
+      "location": "חולון",
+      "defaultDay": "שלישי",
+      "defaultTime": "17:30-19:45",
+      "sourceFile": "data/holon-202440.json",
+      "notes": "נשמר בקובץ ייעודי כי עדכון הקובץ הראשי נחסם"
+    },
+    {
+      "id": "israel-realit-manhi-204675",
+      "name": "השתלמות ישראל ריאלית מנח״י",
+      "officialNumber": "204675",
+      "year": "חסר",
+      "field": "חסר",
+      "defaultTime": "16:30-19:00",
+      "sourceFile": "data/israel-realit-manhi-204675.json",
+      "notes": "שנת התאריכים ונושא המפגשים לא נמסרו"
+    }
+  ],
+  "teachingEvents": [
+    { "officialNumber": "215195", "trainingName": "השתלמות ב", "date": "18 מאי 2026", "isoDate": "2026-05-18", "time": "16:00-18:30", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "215195", "trainingName": "השתלמות ב", "date": "25 מאי 2026", "isoDate": "2026-05-25", "time": "16:00-18:30", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "215195", "trainingName": "השתלמות ב", "date": "8 יוני 2026", "isoDate": "2026-06-08", "time": "16:00-18:30", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "215195", "trainingName": "השתלמות ב", "date": "22 יוני 2026", "isoDate": "2026-06-22", "time": "16:00-18:30", "lessons": 3, "teachingStatus": "אלמד", "eventStatus": "עתידי" },
+
+    { "officialNumber": "215203", "trainingName": "השתלמות ג", "date": "18 מאי 2026", "isoDate": "2026-05-18", "time": "19:00-21:30", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "215203", "trainingName": "השתלמות ג", "date": "25 מאי 2026", "isoDate": "2026-05-25", "time": "19:00-21:30", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "215203", "trainingName": "השתלמות ג", "date": "8 יוני 2026", "isoDate": "2026-06-08", "time": "19:00-21:30", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "215203", "trainingName": "השתלמות ג", "date": "22 יוני 2026", "isoDate": "2026-06-22", "time": "19:00-21:30", "lessons": 3, "teachingStatus": "אלמד", "eventStatus": "עתידי", "dataIssue": "קיים במעקב הוראה אך לא מופיע כרגע בקובץ meetings.json הראשי" },
+
+    { "officialNumber": "204126", "trainingName": "השתלמות פסגה מודיעין", "date": "8 בדצמבר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "204126", "trainingName": "השתלמות פסגה מודיעין", "date": "5 בינואר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "204126", "trainingName": "השתלמות פסגה מודיעין", "date": "12 בינואר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+
+    { "officialNumber": "209640", "trainingName": "השתלמות תקשוב", "date": "10 בדצמבר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "209640", "trainingName": "השתלמות תקשוב", "date": "30 בדצמבר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "209640", "trainingName": "השתלמות תקשוב", "date": "7 בינואר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "209640", "trainingName": "השתלמות תקשוב", "date": "19 בינואר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "209640", "trainingName": "השתלמות תקשוב", "date": "26 בינואר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "209640", "trainingName": "השתלמות תקשוב", "date": "2 בפברואר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "209640", "trainingName": "השתלמות תקשוב", "date": "9 בפברואר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "209640", "trainingName": "השתלמות תקשוב", "date": "16 בפברואר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "209640", "trainingName": "השתלמות תקשוב", "date": "23 בפברואר", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "209640", "trainingName": "השתלמות תקשוב", "date": "2 במרץ", "isoDate": "", "time": "חסר", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+
+    { "officialNumber": "202440", "trainingName": "השתלמות חולון", "date": "27.1.2026", "isoDate": "2026-01-27", "time": "17:30-19:45", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "202440", "trainingName": "השתלמות חולון", "date": "3.2.2026", "isoDate": "2026-02-03", "time": "17:30-19:45", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "202440", "trainingName": "השתלמות חולון", "date": "10.2.2026", "isoDate": "2026-02-10", "time": "17:30-19:45", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "202440", "trainingName": "השתלמות חולון", "date": "17.2.2026", "isoDate": "2026-02-17", "time": "17:30-19:45", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "202440", "trainingName": "השתלמות חולון", "date": "24.2.2026", "isoDate": "2026-02-24", "time": "17:30-19:45", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "202440", "trainingName": "השתלמות חולון", "date": "10.3.2026", "isoDate": "2026-03-10", "time": "17:30-19:45", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "202440", "trainingName": "השתלמות חולון", "date": "17.3.2026", "isoDate": "2026-03-17", "time": "17:30-19:45", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "202440", "trainingName": "השתלמות חולון", "date": "28.4.2026", "isoDate": "2026-04-28", "time": "17:30-19:45", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "202440", "trainingName": "השתלמות חולון", "date": "12.5.2026", "isoDate": "2026-05-12", "time": "17:30-19:45", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+    { "officialNumber": "202440", "trainingName": "השתלמות חולון", "date": "19.5.2026", "isoDate": "2026-05-19", "time": "17:30-19:45", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "בוצע" },
+
+    { "officialNumber": "204675", "trainingName": "השתלמות ישראל ריאלית מנח״י", "date": "11 נובמבר", "isoDate": "", "time": "16:30-19:00", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "204675", "trainingName": "השתלמות ישראל ריאלית מנח״י", "date": "9 דצמבר", "isoDate": "", "time": "16:30-19:00", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" },
+    { "officialNumber": "204675", "trainingName": "השתלמות ישראל ריאלית מנח״י", "date": "13 ינואר", "isoDate": "", "time": "16:30-19:00", "lessons": 3, "teachingStatus": "לימדתי", "eventStatus": "שנה חסרה" }
+  ],
+  "auditIssues": [
+    { "severity": "חשוב", "item": "215203 בתאריך 22 יוני", "issue": "קיים במעקב הוראה אך אין לו מספר מפגש תואם בקובץ meetings.json הראשי" },
+    { "severity": "חשוב", "item": "חולון 202440", "issue": "קיים בקובץ ייעודי ולא משולב עדיין בקובץ הראשי trainings.json" },
+    { "severity": "חשוב", "item": "ישראל ריאלית מנח״י 204675", "issue": "קיים בקובץ ייעודי ולא משולב עדיין בקובץ הראשי trainings.json" },
+    { "severity": "מידע חסר", "item": "204126, 209640, 204675", "issue": "חסרה שנה מדויקת לתאריכים" },
+    { "severity": "מידע חסר", "item": "204126, 209640", "issue": "חסרות שעות שעון" },
+    { "severity": "מידע חסר", "item": "204126, 202440, 204675", "issue": "נושא המפגשים לא נמסר" },
+    { "severity": "תקין", "item": "215195 ו-215203", "issue": "יש חפיפה בתאריכים אך שעות שונות, לכן אין סתירה" },
+    { "severity": "תקין", "item": "209640", "issue": "12 בינואר נמחק לפי הוראת יניב ואינו מופיע במאוחד" }
+  ]
+}
