@@ -1,0 +1,22 @@
+{
+  "id": "israel-realit-manhi-204675",
+  "displayName": "השתלמות ישראל ריאלית מנח״י",
+  "officialNumber": "204675",
+  "year": "לא נמסר",
+  "startTime": "16:30",
+  "endTime": "19:00",
+  "totalMeetings": 3,
+  "lessonsPerMeeting": 3,
+  "totalLessons": 9,
+  "taughtByYaniv": true,
+  "meetings": [
+    { "meetingNumber": 1, "displayDate": "11 נובמבר", "date": "", "lessons": 3 },
+    { "meetingNumber": 2, "displayDate": "9 דצמבר", "date": "", "lessons": 3 },
+    { "meetingNumber": 3, "displayDate": "13 ינואר", "date": "", "lessons": 3 }
+  ],
+  "missing": [
+    "שנת התאריכים לא נמסרה",
+    "נושא המפגשים לא נמסר"
+  ],
+  "source": "יניב מסר בצ'אט"
+}
