@@ -67,5 +67,27 @@
     "topics": [
       "לא נמסר"
     ]
+  },
+  {
+    "id": "tikshuv-209640",
+    "displayName": "השתלמות תקשוב",
+    "officialNumber": "209640",
+    "officialNumberStatus": "קיים",
+    "title": "השתלמות תקשוב",
+    "year": "לא נמסר",
+    "field": "תקשוב",
+    "totalMeetings": 11,
+    "lessonsPerMeeting": 3,
+    "totalLessons": 33,
+    "academicHoursPerMeeting": "לא נמסר",
+    "totalAcademicHours": "לא נמסר",
+    "startDate": "לא נמסר",
+    "endDate": "לא נמסר",
+    "defaultStartTime": "לא נמסר",
+    "defaultEndTime": "לא נמסר",
+    "source": "יניב מסר בצ'אט: השתלמות תקשוב מספר 209640; לימדתי בכל המפגשים שנמסרו; כל מפגש הוא 3 שיעורים",
+    "topics": [
+      "תקשוב"
+    ]
   }
 ]
