@@ -1,0 +1,30 @@
+{
+  "id": "holon-202440",
+  "displayName": "השתלמות חולון",
+  "officialNumber": "202440",
+  "year": 2026,
+  "location": "חולון",
+  "day": "שלישי",
+  "startTime": "17:30",
+  "endTime": "19:45",
+  "totalMeetings": 10,
+  "lessonsPerMeeting": 3,
+  "totalLessons": 30,
+  "taughtByYaniv": true,
+  "meetings": [
+    { "meetingNumber": 1, "displayDate": "27.1.2026", "date": "2026-01-27", "lessons": 3 },
+    { "meetingNumber": 2, "displayDate": "3.2.2026", "date": "2026-02-03", "lessons": 3 },
+    { "meetingNumber": 3, "displayDate": "10.2.2026", "date": "2026-02-10", "lessons": 3 },
+    { "meetingNumber": 4, "displayDate": "17.2.2026", "date": "2026-02-17", "lessons": 3 },
+    { "meetingNumber": 5, "displayDate": "24.2.2026", "date": "2026-02-24", "lessons": 3 },
+    { "meetingNumber": 6, "displayDate": "10.3.2026", "date": "2026-03-10", "lessons": 3 },
+    { "meetingNumber": 7, "displayDate": "17.3.2026", "date": "2026-03-17", "lessons": 3 },
+    { "meetingNumber": 8, "displayDate": "28.4.2026", "date": "2026-04-28", "lessons": 3 },
+    { "meetingNumber": 9, "displayDate": "12.5.2026", "date": "2026-05-12", "lessons": 3 },
+    { "meetingNumber": 10, "displayDate": "19.5.2026", "date": "2026-05-19", "lessons": 3 }
+  ],
+  "missing": [
+    "נושא המפגשים לא נמסר"
+  ],
+  "source": "יניב מסר בצ'אט ובתמונה"
+}
