@@ -45,5 +45,27 @@
       "נושאים מתחום הפונקציה",
       "איך להיערך לתחילת כיתה ז וכיתה ח - סיום ההשתלמות"
     ]
+  },
+  {
+    "id": "pisga-modiin-204126",
+    "displayName": "השתלמות פסגה מודיעין",
+    "officialNumber": "204126",
+    "officialNumberStatus": "קיים",
+    "title": "השתלמות פסגה מודיעין",
+    "year": "לא נמסר",
+    "field": "לא נמסר",
+    "totalMeetings": 3,
+    "lessonsPerMeeting": 3,
+    "totalLessons": 9,
+    "academicHoursPerMeeting": "לא נמסר",
+    "totalAcademicHours": "לא נמסר",
+    "startDate": "לא נמסר",
+    "endDate": "לא נמסר",
+    "defaultStartTime": "לא נמסר",
+    "defaultEndTime": "לא נמסר",
+    "source": "יניב מסר בצ'אט: השתלמות פסגה מודיעין מספר 204126; לימדתי ב-8 בדצמבר, 5 בינואר, 12 בינואר; בכל תאריך 3 שיעורים",
+    "topics": [
+      "לא נמסר"
+    ]
   }
 ]
