@@ -1,0 +1,69 @@
+{
+  "lastUpdated": "2026-06-10",
+  "summary": {
+    "trainings": 6,
+    "teachingEvents": 34,
+    "trackedLessons": 102,
+    "futureEvents": 2,
+    "eventsWithMissingYear": 16,
+    "paymentRule": "אם יניב לימד או ילמד בפועל — נדרש מעקב תשלום. אין לסמן שולם בלי מקור מפורש."
+  },
+  "trainingRows": [
+    { "number": "215195", "name": "השתלמות ב", "year": 2026, "time": "16:00-18:30", "eventsTracked": 4, "lessonsTracked": 12, "futureEvents": 1, "dataLocation": "data/trainings.json + data/status.json", "status": "תקין" },
+    { "number": "215203", "name": "השתלמות ג", "year": 2026, "time": "19:00-21:30", "eventsTracked": 4, "lessonsTracked": 12, "futureEvents": 1, "dataLocation": "data/trainings.json + data/status.json", "status": "דורש בדיקה: 22 יוני לא נמצא ב-meetings.json" },
+    { "number": "204126", "name": "השתלמות פסגה מודיעין", "year": "חסר", "time": "חסר", "eventsTracked": 3, "lessonsTracked": 9, "futureEvents": "לא ניתן לחשב בלי שנה", "dataLocation": "data/trainings.json + data/status.json", "status": "חסרה שנה, שעה ונושא" },
+    { "number": "209640", "name": "השתלמות תקשוב", "year": "חסר", "time": "חסר", "eventsTracked": 10, "lessonsTracked": 30, "futureEvents": "לא ניתן לחשב בלי שנה", "dataLocation": "data/trainings.json + data/status.json", "status": "12 בינואר נמחק; חסרה שנה ושעה" },
+    { "number": "202440", "name": "השתלמות חולון", "year": 2026, "time": "17:30-19:45", "eventsTracked": 10, "lessonsTracked": 30, "futureEvents": 0, "dataLocation": "data/holon-202440.json", "status": "תקין אך עדיין בקובץ ייעודי" },
+    { "number": "204675", "name": "השתלמות ישראל ריאלית מנח״י", "year": "חסר", "time": "16:30-19:00", "eventsTracked": 3, "lessonsTracked": 9, "futureEvents": "לא ניתן לחשב בלי שנה", "dataLocation": "data/israel-realit-manhi-204675.json", "status": "חסרה שנה ונושא; עדיין בקובץ ייעודי" }
+  ],
+  "eventRows": [
+    { "number": "215195", "name": "השתלמות ב", "date": "18 מאי 2026", "time": "16:00-18:30", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "215195", "name": "השתלמות ב", "date": "25 מאי 2026", "time": "16:00-18:30", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "215195", "name": "השתלמות ב", "date": "8 יוני 2026", "time": "16:00-18:30", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "215195", "name": "השתלמות ב", "date": "22 יוני 2026", "time": "16:00-18:30", "lessons": 3, "teaching": "אלמד", "eventStatus": "עתידי", "paymentTracking": "צפוי מעקב לאחר ביצוע" },
+
+    { "number": "215203", "name": "השתלמות ג", "date": "18 מאי 2026", "time": "19:00-21:30", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "215203", "name": "השתלמות ג", "date": "25 מאי 2026", "time": "19:00-21:30", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "215203", "name": "השתלמות ג", "date": "8 יוני 2026", "time": "19:00-21:30", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "215203", "name": "השתלמות ג", "date": "22 יוני 2026", "time": "19:00-21:30", "lessons": 3, "teaching": "אלמד", "eventStatus": "עתידי", "paymentTracking": "צפוי מעקב לאחר ביצוע", "issue": "לא נמצא תואם ב-meetings.json" },
+
+    { "number": "204126", "name": "השתלמות פסגה מודיעין", "date": "8 בדצמבר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "204126", "name": "השתלמות פסגה מודיעין", "date": "5 בינואר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "204126", "name": "השתלמות פסגה מודיעין", "date": "12 בינואר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+
+    { "number": "209640", "name": "השתלמות תקשוב", "date": "10 בדצמבר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "209640", "name": "השתלמות תקשוב", "date": "30 בדצמבר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "209640", "name": "השתלמות תקשוב", "date": "7 בינואר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "209640", "name": "השתלמות תקשוב", "date": "19 בינואר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "209640", "name": "השתלמות תקשוב", "date": "26 בינואר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "209640", "name": "השתלמות תקשוב", "date": "2 בפברואר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "209640", "name": "השתלמות תקשוב", "date": "9 בפברואר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "209640", "name": "השתלמות תקשוב", "date": "16 בפברואר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "209640", "name": "השתלמות תקשוב", "date": "23 בפברואר", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "209640", "name": "השתלמות תקשוב", "date": "2 במרץ", "time": "חסר", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+
+    { "number": "202440", "name": "השתלמות חולון", "date": "27.1.2026", "time": "17:30-19:45", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "202440", "name": "השתלמות חולון", "date": "3.2.2026", "time": "17:30-19:45", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "202440", "name": "השתלמות חולון", "date": "10.2.2026", "time": "17:30-19:45", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "202440", "name": "השתלמות חולון", "date": "17.2.2026", "time": "17:30-19:45", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "202440", "name": "השתלמות חולון", "date": "24.2.2026", "time": "17:30-19:45", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "202440", "name": "השתלמות חולון", "date": "10.3.2026", "time": "17:30-19:45", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "202440", "name": "השתלמות חולון", "date": "17.3.2026", "time": "17:30-19:45", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "202440", "name": "השתלמות חולון", "date": "28.4.2026", "time": "17:30-19:45", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "202440", "name": "השתלמות חולון", "date": "12.5.2026", "time": "17:30-19:45", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "202440", "name": "השתלמות חולון", "date": "19.5.2026", "time": "17:30-19:45", "lessons": 3, "teaching": "לימדתי", "eventStatus": "בוצע", "paymentTracking": "נדרש מעקב; לא נבדק" },
+
+    { "number": "204675", "name": "השתלמות ישראל ריאלית מנח״י", "date": "11 נובמבר", "time": "16:30-19:00", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "204675", "name": "השתלמות ישראל ריאלית מנח״י", "date": "9 דצמבר", "time": "16:30-19:00", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" },
+    { "number": "204675", "name": "השתלמות ישראל ריאלית מנח״י", "date": "13 ינואר", "time": "16:30-19:00", "lessons": 3, "teaching": "לימדתי", "eventStatus": "שנה חסרה", "paymentTracking": "נדרש מעקב; לא נבדק" }
+  ],
+  "auditFindings": [
+    { "level": "סתירה אפשרית", "item": "215203 / 22 יוני 2026", "finding": "נמסר שאלמד, אבל אין מפגש תואם ב-data/meetings.json. צריך לאשר אם זה מפגש נוסף, החלפת תאריך או טעות בקובץ המפגשים." },
+    { "level": "פער ארגוני", "item": "202440 ו-204675", "finding": "נשמרו בקבצים ייעודיים ולא מוזגו עדיין ל-data/trainings.json ול-data/meetings.json." },
+    { "level": "חסר", "item": "204126, 209640, 204675", "finding": "חסרה שנה מדויקת לחלק מהתאריכים, ולכן אי אפשר לקבוע אם בוצע או עתידי." },
+    { "level": "חסר", "item": "204126, 209640", "finding": "חסרות שעות התחלה וסיום." },
+    { "level": "תקין", "item": "215195 מול 215203", "finding": "אותם תאריכים אינם סתירה כי השעות שונות: 16:00-18:30 מול 19:00-21:30." },
+    { "level": "תקין", "item": "209640", "finding": "12 בינואר הוסר מתקשוב לפי הוראת יניב." },
+    { "level": "חסר", "item": "כל האירועים", "finding": "אין עדיין מסמכי תשלום או סטטוס שולם/לא שולם, לכן כל התשלומים מסומנים לא נבדק." }
+  ]
+}
