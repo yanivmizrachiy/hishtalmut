@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>טבלת אקסל השתלמויות</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/excel-table.css">
+</head>
+<body>
+  <main class="main-page excel-page" id="top">
+    <header class="page-header">
+      <div class="hero-copy">
+        <h1>טבלת אקסל השתלמויות</h1>
+        <p>כל המידע בטבלה אחת: השתלמויות, מפגשים, הוראה, מצב ומעקב תשלום</p>
+      </div>
+      <nav class="quick-nav">
+        <a href="#filters">סינון</a>
+        <a href="#chapters">פרקים</a>
+        <a href="#excel">טבלת אקסל</a>
+        <a href="#audit">פערים</a>
+        <a href="smart-table.html">טבלה חכמה</a>
+        <a href="index.html">ראשי</a>
+      </nav>
+    </header>
+
+    <section class="summary-grid" id="summary"></section>
+
+    <section class="search-box" id="filters">
+      <label for="searchBox">חיפוש בכל הטבלה</label>
+      <input id="searchBox" type="search" placeholder="חפש מספר, שם, תאריך, שעה, סטטוס, תשלום או הערה">
+      <div class="excel-filter-row">
+        <select id="trainingFilter"><option value="">כל ההשתלמויות</option></select>
+        <select id="statusFilter"><option value="">כל המצבים</option></select>
+        <select id="paymentFilter"><option value="">כל מצבי התשלום</option></select>
+        <button type="button" id="clearFilters">נקה סינון</button>
+      </div>
+    </section>
+
+    <section class="data-section" id="chapters">
+      <div class="section-heading-row"><h2>קיצורי ניווט לפי פרקים</h2><a class="back-to-top" href="#top">לראש הדף</a></div>
+      <div class="chapter-grid" id="chapterGrid"></div>
+    </section>
+
+    <section class="data-section" id="excel">
+      <div class="section-heading-row"><h2>טבלת אקסל מרכזית</h2><a class="back-to-top" href="#top">לראש הדף</a></div>
+      <div class="excel-tools"><span id="rowCount"></span><button type="button" id="copyCsv">העתק CSV</button></div>
+      <div class="table-wrap excel-wrap">
+        <table class="excel-table">
+          <thead><tr><th>#</th><th>מספר</th><th>השתלמות</th><th>תאריך</th><th>שעה</th><th>שיעורים</th><th>הוראה</th><th>מצב</th><th>מעקב תשלום</th><th>הערה</th></tr></thead>
+          <tbody id="excelBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="data-section" id="audit">
+      <div class="section-heading-row"><h2>פערים וסתירות</h2><a class="back-to-top" href="#top">לראש הדף</a></div>
+      <div class="table-wrap"><table><thead><tr><th>רמה</th><th>פריט</th><th>ממצא</th></tr></thead><tbody id="auditBody"></tbody></table></div>
+    </section>
+  </main>
+  <script src="assets/js/excel-table.js"></script>
+</body>
+</html>
